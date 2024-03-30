@@ -1,0 +1,240 @@
+---
+import "../styles/global.css"
+import { Navigation, Footer } from '../components/layout'
+import {laptop, clouds, thinking, silly, party} from "../assets/memoji"
+---
+
+<html lang="en" class="h-full">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="Cache-control" content="public"/>
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>About</title>
+		<script src="https://cdn.usefathom.com/script.js" data-site="BNBWHPVJ" defer></script>
+	</head>
+  <body class="h-full bg-slate-700">
+    <Navigation />
+		<!-- <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8 text-white">
+			<div class="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+				<div class="absolute inset-0 -z-10 overflow-hidden">
+					<svg class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-800 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]" aria-hidden="true">
+						<defs>
+							<pattern id="e813992c-7d03-4cc4-a2bd-151760b470a0" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
+								<path d="M100 200V.5M.5 .5H200" fill="none" />
+							</pattern>
+						</defs>
+						<svg x="50%" y="-1" class="overflow-visible fill-black opacity-35">
+							<path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0" />
+						</svg>
+						<rect width="100%" height="100%" stroke-width="0" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
+					</svg>
+				</div>
+				<div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+					<div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+						<div class="lg:pr-4">
+							<div class="lg:max-w-lg">
+								<p class="text-xl font-semibold leading-7 text-indigo-500 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Rich Kevan</p>
+								<h1 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">About Me</h1>
+								<p class="mt-6 text-xl leading-8">I call the Bay Area home, where I live with my wife, kids, and a labradoodle.</p>
+							</div>
+						</div>
+					</div>
+					<div class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+						<img class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png" alt="">
+					</div>
+					<div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+						<div class="lg:pr-4">
+							<div class="max-w-xl text-base leading-7 lg:max-w-lg">
+								<p>When I am not optic nerve deep in code, I am tinkering with some other tech or exploring one of the many interesting places around us. Video games, Drones, Virtual Reality, and Ghost Towns are some of things I am most passionate about. Some other things I enjoy that combine with many of my other passions is learning and problem solving. The bonus is that thos two really feed off each other and learning new skills or concepts presents new problems to solve.</p>
+								<ul role="list" class="mt-8 space-y-8">
+									<li  class="flex gap-x-3">
+										<Icon name="logo/us-army-logo" class="mt-1 h-10 w-10 flex-none text-black drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" />
+										<span><strong class="font-bold">US Army Veteran.</strong> I served a total of 12 years with 3 tours overseas and 1 mobilization in support of relief efforts for Huricane Katrina</span>
+									</li>
+									<li class="flex gap-x-3">
+										<Icon name="logo/California-Republic" class="mt-1 h-10 w-10 flex-none text-indigo-600 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"/>
+										<span><strong class="font-semibold">California Resident.</strong> I enjoy the benefit of living an hour from snow and sea. From San Francisco to Reno, there is so much to do and see.</span>
+									</li>
+									<li class="flex gap-x-3">
+										<Icon name="logo/oregon-ducks" class="mt-1 h-10 w-10 flex-none text-indigo-600 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" />
+										<span><strong class="font-semibold">Oregon Ducks Fan.</strong> I am an avid supporter of the Oregon Ducks. Looking forward to seeing what they do in the BIG10 this next season.</span>
+									</li>
+								</ul>
+								<p class="mt-8">Now that you know a little about me, I invite you to connect with me on one of the social platforms below or use the contact link to send me a message. I try my best to respond promptly and interact regularly. If you are a fellow gamer say hi and let's connect or steam or xbox. Looking forward to sharing with all of you.</p>
+								<div class="mt-10 mx-auto w-1/2">
+									<a href="/contact" class="inline-block rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700">Contact Me</a>
+									<SocialBar />
+								</div>
+								<h2 class="mt-16 text-2xl font-bold tracking-tight">Solve, Create, Learn</h2>
+								<p class="mt-6">Professionally I work with various languages depending on the project. I try to choose the best languages to solve the requirments and needs of each project. I strive to create unique solutions for an optimal outcome. I constantly learn from the latest trends and newest technologies to try and be innovative. If you would like to learn more about my professional work head to my experience page.</p>
+								<div class="mt-10 mx-auto w-1/2">
+									<a href="/experience" class="inline-block rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700">Experience</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div> -->
+		<div>
+			<main class="isolate">
+				<!-- Hero section -->
+				<div class="relative isolate -z-10">
+					<svg class="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-slate-900 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]" aria-hidden="true">
+						<defs>
+							<pattern id="1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
+								<path d="M.5 200V.5H200" fill="none" />
+							</pattern>
+						</defs>
+						<svg x="50%" y="-1" class="overflow-visible fill-indigo-800">
+							<path d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z" stroke-width="0" />
+						</svg>
+						<rect width="100%" height="100%" stroke-width="0" fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)" />
+					</svg>
+					<div class="absolute left-1/2 right-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48" aria-hidden="true">
+						<div class="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(63.1% 29.5%, 100% 17.1%, 76.6% 3%, 48.4% 0%, 44.6% 4.7%, 54.5% 25.3%, 59.8% 49%, 55.2% 57.8%, 44.4% 57.2%, 27.8% 47.9%, 35.1% 81.5%, 0% 97.7%, 39.2% 100%, 35.2% 81.4%, 97.2% 52.8%, 63.1% 29.5%)"></div>
+					</div>
+					<div class="overflow-hidden">
+						<div class="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
+							<div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
+								<div class="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
+									<h1 class="text-4xl font-bold tracking-tight sm:text-6xl">Hey, I'm Rich.<br>Nice to meet you.</h1>
+									<p class="relative mt-6 text-lg leading-8 sm:max-w-md lg:max-w-none">
+										Lets get personal, you'll discover I'm a tech enthusiast with a dreamer's heart and a thinker's mind. Known for my silly side, I believe in the power of laughter and fun to transform the mundane into the extraordinary. Passionate about pushing boundaries in technology, I find joy in exploring new innovations, dreaming up creative solutions, and engaging in thoughtful discussions. Whether coding or cracking jokes, my approach is always infused with a sense of playfulness and a vision for a brighter future.</p>
+								</div>
+								<div class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
+									<div class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
+										<div class="relative">
+											<img src={laptop.src} alt="" class="aspect-[2/3] w-full rounded-xl object-cover ">
+											<div class="pointer-events-none absolute inset-0 rounded-xl"></div>
+										</div>
+									</div>
+									<div class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
+										<div class="relative">
+											<img src={thinking.src} alt="" class="aspect-[2/3] w-full rounded-xl object-cover ">
+											<div class="pointer-events-none absolute inset-0 rounded-xl"></div>
+										</div>
+										<div class="relative">
+											<img src={clouds.src} alt="" class="aspect-[2/3] w-full rounded-xl object-cover ">
+											<div class="pointer-events-none absolute inset-0 rounded-xl"></div>
+										</div>
+									</div>
+									<div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
+										<div class="relative">
+											<img src={party.src} alt="" class="aspect-[2/3] w-full rounded-xl object-cover ">
+											<div class="pointer-events-none absolute inset-0 rounded-xl"></div>
+										</div>
+										<div class="relative">
+											<img src={silly.src} alt="" class="aspect-[2/3] w-full rounded-xl object-cover ">
+											<div class="pointer-events-none absolute inset-0 rounded-xl"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+				<!-- Content section -->
+				<div class="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
+					<div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
+						<h2 class="text-3xl font-bold tracking-tight sm:text-4xl">My story</h2>
+						<div class="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
+							<div class="lg:w-full lg:max-w-2xl lg:flex-auto">
+								<p class="text-xl leading-8">From the moment I unwrapped my first Nintendo, technology has been a central theme in my life. Early interactions with an IBM computer introduced by my mom ignited a lifelong fascination. This wasn't just a hobby; it was the beginning of a profound journey. Despite no singular event marking my dedication, my passion for tech has been unwavering. It's the allure of the cutting edge, the constant evolution, that captivates me. This drive has propelled me through hobbies, education, and into a professional realm I once thought was beyond reach.</p>
+								<div class="mt-10 max-w-xl text-base leading-7">
+									<p>Entering the tech industry professionally later than many, I faced my share of challenges. Yet, it was this perseverance that defined my path, transforming obstacles into stepping stones. Building my first computer and crafting my initial program as a teenager laid the foundation. The dot-com era was a playground where I honed my skills, learning to create websites and delving into PHP through WordPress, teaching myself the intricacies of code.</p>
+									<p class="mt-10">The future of my tech journey remains as open and expansive as the field itself. With technology's relentless pace, my path depends on its evolution. Yet, one thing is certain: my passion for learning and adapting to the newest innovations will continue to guide me. As I reflect on past achievements, I remain eager to see where this journey takes me, ever inspired by the endless possibilities that technology presents.</p>
+								</div>
+							</div>
+							<div class="lg:flex lg:flex-auto lg:justify-center">
+								<dl class="w-64 space-y-8 xl:w-80">
+									<div class="flex flex-col-reverse gap-y-4">
+										<dt class="text-base leading-7">Years old</dt>
+										<dd class="text-5xl font-semibold tracking-tight">40</dd>
+									</div>
+									<div class="flex flex-col-reverse gap-y-4">
+										<dt class="text-base leading-7">Years in the Army</dt>
+										<dd class="text-5xl font-semibold tracking-tight">12</dd>
+									</div>
+									<div class="flex flex-col-reverse gap-y-4">
+										<dt class="text-base leading-7">States/Countries visited</dt>
+										<dd class="text-5xl font-semibold tracking-tight">10/7</dd>
+									</div>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+				<!-- Image section -->
+				<div class="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
+					<img src=https://images.unsplash.com/photo-1589998059171-988d887df646?q=80&w=2676&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  alt="My story" class="aspect-[5/2] w-full object-cover xl:rounded-3xl">
+				</div>
+		
+				<!-- Values section -->
+				<div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
+					<div class="mx-auto max-w-2xl lg:mx-0">
+						<h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Passions & Hobbies</h2>
+						<p class="mt-6 text-lg leading-8">Exploring, Discovering, Learning, Mastering, Dreaming, Creating<br />A Few of My Life's Diverse Passions and Hobbies.</p>
+					</div>
+					<dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+						<div>
+							<dt class="font-semibold">Video Games</dt>
+							<dd class="mt-1">Avid gamer on Xbox and PC, with a special love for the Diablo series and a passion for multiplayer coop games, cherishing the fun of couch coop sessions.</dd>
+						</div>
+						<div>
+							<dt class="font-semibold">Road Trips</dt>
+							<dd class="mt-1">An enthusiast of road trips with a penchant for the peculiar, finding joy in discovering offbeat destinations for the journey and destinations.</dd>
+						</div>
+						<div>
+							<dt class="font-semibold">Ghost Towns</dt>
+							<dd class="mt-1">Passionate about history and stories, I've explored towns across Oregon and California, uncovering the layered past of these forgotten places.</dd>
+						</div>
+						<div>
+							<dt class="font-semibold">Tech Gadgets</dt>
+							<dd class="mt-1">A tech gadget aficionado, reveling in the latest from tech in many categories, with a broad appreciation for innovation over brand loyalty.</dd>
+						</div>
+						<div>
+							<dt class="font-semibold">Exploring Nature</dt>
+							<dd class="mt-1">A lover of the great outdoors, I find solace and adventure in the majestic settings of National Parks, exploring nature's wonders firsthand.</dd>
+						</div>
+						<div>
+							<dt class="font-semibold">Learning</dt>
+							<dd class="mt-1">Driven by an insatiable curiosity, I immerse myself in online courses, constantly expanding my knowledge in areas related to my hobbies and passions.</dd>
+						</div>
+					</dl>
+				</div>
+					
+				
+			
+				<div class="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
+					<div class="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
+						<h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">Start a Conversation,
+							I'm Just a Click Away.</h2>
+						<p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">Explore opportunities for growth: I'm just a click away, waiting to connect, converse, and create impactful solutions.</p>
+						<div class="mt-10 flex items-center justify-center gap-x-6">
+							<a href="/contact" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Start a conversation</a>
+							<a href="/experience" class="text-sm font-semibold leading-6 text-white">Learn more <span aria-hidden="true">→</span></a>
+						</div>
+						<svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
+							<circle cx="512" cy="512" r="512" fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)" fill-opacity="0.7" />
+							<defs>
+								<radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
+									<stop stop-color="#7775D6" />
+									<stop offset="1" stop-color="#E935C1" />
+								</radialGradient>
+							</defs>
+						</svg>
+					</div>
+				</div>
+				
+			</main>
+			<Footer />
+		</div>
+		
+  </body>
+</html>

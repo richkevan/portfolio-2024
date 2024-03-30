@@ -1,0 +1,103 @@
+[
+  {
+    "icon": "skills/html5",
+    "title": "HTML5"
+  },
+  {
+    "icon": "skills/css3",
+    "title": "CSS3"
+  },
+  {
+    "icon": "skills/tailwindcss",
+    "title": "Tailwind CSS"
+  },
+  {
+    "icon": "skills/javascript",
+    "title": "JavaScript"
+  },
+  {
+    "icon": "skills/typescript",
+    "title": "TypeScript"
+  },
+  {
+    "icon": "skills/reactdotjs",
+    "title": "React"
+  },
+  {
+    "icon": "skills/nextdotjs",
+    "title": "Next.js"
+  },
+  {
+    "icon": "skills/astro",
+    "title": "Astro"
+  },
+
+  {
+    "icon": "skills/jest",
+    "title": "Jest"
+  },
+  {
+    "icon": "skills/cypress",
+    "title": "Cypress"
+  },
+  {
+    "icon": "skills/nodedotjs",
+    "title": "Node.js"
+  },
+  {
+    "icon": "skills/express",
+    "title": "Express"
+  },
+  {
+    "icon":"skills/python",
+    "title":"Python"
+  },
+  {
+    "icon": "skills/django",
+    "title": "Django"
+  },
+  {
+    "icon": "skills/fastapi",
+    "title": "FastAPI"
+  },
+  {
+    "icon": "skills/mysql",
+    "title": "MySQL"
+  },
+  {
+    "icon": "skills/postgresql",
+    "title": "PostgreSQL"
+  },
+  {
+    "icon": "skills/mongodb",
+    "title": "MongoDB"
+  },
+  {
+    "icon": "skills/graphql",
+    "title": "GraphQL"
+  },
+  {
+    "icon": "skills/redis",
+    "title": "Redis"
+  },
+  {
+    "icon": "skills/git",
+    "title": "Git"
+  },
+  {
+    "icon": "skills/github",
+    "title": "GitHub"
+  },
+  {
+    "icon": "skills/githubactions",
+    "title": "GitHub Actions"
+  },
+  {
+    "icon": "skills/gitignoredotio",
+    "title": "Gitignore"
+  },
+  {
+    "icon": "skills/gitlfs",
+    "title": "Git LFS"
+  }
+]

@@ -1,0 +1,40 @@
+---
+import SocialBar from "../bars/social-bar.astro";
+---
+
+<footer class="relative mt-16">
+  <div class="relative">
+    <div class="absolute inset-0 flex items-center" aria-hidden="true">
+      <div class="w-full border-t border-gray-300"></div>
+    </div>
+    <!-- <div class="relative flex justify-center">
+      <span class="bg-white px-2 text-sm text-gray-500">Continue</span>
+    </div> -->
+  </div>
+  <div class="mx-auto max-w-7xl overflow-hidden px-6 py-10 sm:py-14 lg:px-8">
+    <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
+      <div class="pb-6">
+        <a href="/" class="text-sm leading-6 hover:text-indigo-600 hover:drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Home</a>
+      </div>
+      <div class="pb-6">
+        <a href="/about" class="text-sm leading-6 hover:text-indigo-600 hover:drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">About</a>
+      </div>
+      <div class="pb-6">
+        <a href="/experience" class="text-sm leading-6 hover:text-indigo-600 hover:drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Experience</a>
+      </div>
+      <div class="pb-6">
+        <a href="/projects" class="text-sm leading-6 hover:text-indigo-600 hover:drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Projects</a>
+      </div>
+      <div class="pb-6">
+        <a href="/blog" class="text-sm leading-6 hover:text-indigo-600 hover:drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Blog</a>
+      </div>
+      <!-- <div class="pb-6">
+        <a href="#" class="text-sm leading-6 hover:text-indigo-600 hover:drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Partners</a>
+      </div> -->
+    </nav>
+    <div class="mt-10 flex justify-center space-x-10">
+      <SocialBar />
+    </div>
+    <p class="mt-10 text-center text-xs leading-5 text-gray-500">&copy; 2024 Rich Kevan, Inc. All rights reserved.</p>
+  </div>
+</footer>

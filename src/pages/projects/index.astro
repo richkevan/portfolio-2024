@@ -1,0 +1,141 @@
+---
+import "../../styles/global.css"
+import { Navigation, Footer} from "../../components/layout"
+import Projects from "../../components/mappables/github-projects.astro"
+import Gists from "../../components/mappables/github-gists.astro"
+import { getGists, getRepo } from "../../utilities/octokit"
+const gistList = await getGists()
+const repoList = await getRepo("portfolio")
+---
+
+<html lang="en" class="h-full">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Projects</title>
+    <script src="https://cdn.usefathom.com/script.js" data-site="BNBWHPVJ" defer></script>
+	</head>
+  <body class="h-full">
+<div class="bg-gray-900">
+  <Navigation />
+  <main>
+    <!-- Github section -->
+    <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-32 lg:px-8">
+      <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
+        <div class="mx-auto max-w-2xl">
+          <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Dive into Projects</h2>
+          <p class="mt-4 text-lg leading-8 text-gray-400">A collection of complete and partial development projects that showcase concepts and technologies across a variety of programming languages and frameworks.</p>
+        </div>
+        <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
+          {
+            repoList.map((project) => (
+              <Projects {...project} />
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+
+    <!-- Gist section -->
+    <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-32 lg:px-8">
+      <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
+        <div class="mx-auto max-w-2xl">
+          <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Dive into Gists</h2>
+          <p class="mt-4 text-lg leading-8 text-gray-400">A curated selection of gists and code snippets that encapsulate efficient solutions and innovative approaches within compact blocks of code.</p>
+        </div>
+        <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
+              {
+                gistList.map((gist) => (
+                  <Gists {...gist} />
+                ))
+              }
+        </ul>
+      </div>
+    </div>
+
+    <!-- FAQ section -->
+    <div class="mx-auto mt-24 max-w-7xl px-6 sm:mt-56 lg:px-8">
+        <div class="mx-auto max-w-7xl divide-y divide-gray-300/50 px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
+          <h2 class="text-2xl font-bold leading-10 tracking-tight">Frequently asked questions</h2>
+          <dl class="mt-10 space-y-8 divide-y divide-gray-300/50">
+            <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+              <dt class="text-base font-semibold leading-7 lg:col-span-5">What is your primary area of expertise?</dt>
+              <dd class="mt-4 lg:col-span-7 lg:mt-0">
+                <p class="text-base leading-7">My expertise lies in full-stack web development, with a strong focus on both front-end and back-end technologies.</p>
+              </dd>
+            </div>
+      
+            <!-- Question 2 -->
+          <dl class="mt-10 space-y-8 divide-y divide-gray-300/50">
+            <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+              <dt class="text-base font-semibold leading-7 lg:col-span-5">Can you describe your educational background?</dt>
+              <dd class="mt-4 lg:col-span-7 lg:mt-0">
+                <p class="text-base leading-7"> I am working on a Bachelor of Science in Computer Science and a Full Stack Web Development certificate, reflecting a solid foundation in software engineering principles and web development.</p>
+              </dd>
+            </div>
+          </dl>
+          <!-- Question 3 -->
+          <dl class="mt-10 space-y-8 divide-y divide-gray-300/50">
+            <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+              <dt class="text-base font-semibold leading-7 lg:col-span-5">How many years of experience do you have in software development?</dt>
+              <dd class="mt-4 lg:col-span-7 lg:mt-0">
+                <p class="text-base leading-7">I have over five years of professional experience in software development, working on a range of projects from web applications to serverless architectures.</p>
+              </dd>
+            </div>
+          </dl>
+          <!-- Question 4 -->
+          <dl class="mt-10 space-y-8 divide-y divide-gray-300/50">
+            <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+              <dt class="text-base font-semibold leading-7 lg:col-span-5">Do you have experience working in teams or leading projects?</dt>
+              <dd class="mt-4 lg:col-span-7 lg:mt-0">
+                <p class="text-base leading-7">Yes, I have extensive experience collaborating in team environments and have led several projects, focusing on optimizing performance and enhancing user experience.</p>
+              </dd>
+            </div>
+          </dl>
+          <!-- Question 5 -->
+          <dl class="mt-10 space-y-8 divide-y divide-gray-300/50">
+            <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+              <dt class="text-base font-semibold leading-7 lg:col-span-5">How do you approach problem-solving in development projects?</dt>
+              <dd class="mt-4 lg:col-span-7 lg:mt-0">
+                <p class="text-base leading-7">Yes, I have extensive experience collaborating in team environments and have led several projects, focusing on optimizing performance and enhancing user experience.</p>
+              </dd>
+            </div>
+          </dl>
+          <!-- Question 4 -->
+          <dl class="mt-10 space-y-8 divide-y divide-gray-300/50">
+            <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+              <dt class="text-base font-semibold leading-7 lg:col-span-5">Do you have experience working in teams or leading projects?</dt>
+              <dd class="mt-4 lg:col-span-7 lg:mt-0">
+                <p class="text-base leading-7">My approach to problem-solving involves thorough analysis, collaborative brainstorming, and iterative development, ensuring solutions are efficient, scalable, and user-centric.</p>
+              </dd>
+            </div>
+          </dl>
+          <!-- Question 4 -->
+          <dl class="mt-10 space-y-8 divide-y divide-gray-300/50">
+            <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+              <dt class="text-base font-semibold leading-7 lg:col-span-5">Are you open to learning new technologies or languages?</dt>
+              <dd class="mt-4 lg:col-span-7 lg:mt-0">
+                <p class="text-base leading-7">Absolutely! I am committed to continuous learning and eagerly embrace opportunities to explore new technologies and programming languages.</p>
+              </dd>
+            </div>
+          </dl>
+          <!-- Question 4 -->
+          <dl class="mt-10 space-y-8 divide-y divide-gray-300/50">
+            <div class="pt-8 lg:grid lg:grid-cols-12 lg:gap-8">
+              <dt class="text-base font-semibold leading-7 lg:col-span-5">How can someone contact you for potential opportunities?</dt>
+              <dd class="mt-4 lg:col-span-7 lg:mt-0">
+                <p class="text-base leading-7">I can be reached via email at <a href="mailto:hey@richkevan.com" class="underline font-bold">hey@richkevan.com</a>, phone <a href="tel:17077706843" class="underline font-bold">7077706843</a>, or through my <a href="/contact" class="underline font-bold">contact page</a>. I welcome inquiries about freelance projects, full-time positions, or collaborative ventures.</p>
+              </dd>
+            </div>
+          </dl>
+        </div> 
+    </div>
+  </main>
+  <Footer />
+  
+  </div>
+
+  </body>
+</html>

@@ -1,0 +1,229 @@
+---
+import "../styles/global.css"
+import {Navigation, Footer} from '../components/layout/index'
+import { Image } from "astro:assets"
+import homeHero from "../assets/images/home-hero.avif"
+import homeStory from "../assets/images/home-story.avif"
+import { Icon } from "astro-icon/components"
+---
+
+<html lang="en" class="h-full">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="Cache-control" content="public"/>
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Rich Kevan</title>
+		<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+		<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+	</head>
+	<body class="bg-slate-800 h-full">
+		<div >
+			<Navigation />
+			
+				<!-- Hero section -->
+				<div class="relative isolate overflow-hidden">
+					<svg class="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
+						<defs>
+							<pattern id="983e3e4c-de6d-4c3f-8d64-b9761d1534cc" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
+								<path d="M.5 200V.5H200" fill="none" />
+							</pattern>
+						</defs>
+						<svg x="50%" y="-1" class="overflow-visible fill-gray-800/20">
+							<path d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z" stroke-width="0" />
+						</svg>
+						<rect width="100%" height="100%" stroke-width="0" fill="url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)" />
+					</svg>
+					<div class="absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]" aria-hidden="true">
+						<div class="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-20" style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"></div>
+					</div>
+					<div class="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-40 lg:flex lg:px-8 lg:pt-40">
+						<div class="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8">
+							<img class="h-11" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" height="48px" width="48px">
+							<h1 class="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">Rich Kevan,<br />Full Stack Dev</h1>
+							<p class="mt-6 text-lg leading-8 text-gray-300">Driven by innovation, I create intuitive, powerful applications. This portfolio showcases my dedication to full stack development, blending creativity with technical prowess for exceptional digital experiences.</p>
+							<div class="mt-10 flex items-center gap-x-6">
+								<a href="/about" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">About Me</a>
+								<a href="/projects" class="text-sm font-semibold leading-6 text-white">Projects <span aria-hidden="true">→</span></a>
+							</div>
+						</div>
+						<div class="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
+							<div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
+								<Image 
+								src={homeHero} 
+								alt="App screenshot"
+								loading="eager"
+								widths={[320, 540, 720, homeHero.width]}
+								sizes={`(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw`}
+								class="w-[76rem] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10 grayscale"/>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+				<!-- Feature section -->
+				<div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
+					<div class="mx-auto max-w-2xl text-center">
+						<h2 class="text-base font-semibold leading-7 text-indigo-400">Who Am I?</h2>
+						<p class="mt-2 text-4xl font-bold tracking-tight text-white sm:text-3xl">Get Personal, Go Professional, Dive into Projects</p>
+						<p class="mt-6 text-lg leading-8 text-gray-300">The Fun Way to Uncover My World! Discover what drives me, inspires me, and makes me unique.</p>
+					</div>
+					<div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+						<div class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+							<div class="flex flex-col">
+								<div class="text-base font-semibold leading-7 text-white">
+									<div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-500">
+										<Icon name="logo/about" class="w-8 h-8"/>
+									</div>
+									Get Personal
+								</div>
+								<div class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
+									<p class="flex-auto">Explore my roots and passions: A glimpse into the experiences and hobbies that shape my unique perspective and creativity.</p>
+									<p class="mt-6">
+										<a href="/about" class="text-sm font-semibold leading-6 text-indigo-400">Learn more <span aria-hidden="true">→</span></a>
+									</p>
+								</div>
+							</div>
+							<div class="flex flex-col">
+								<div class="text-base font-semibold leading-7 text-white">
+									<div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-500">
+										<Icon name="logo/resume" class="w-8 h-8"/>
+									</div>
+									Go Professional
+								</div>
+								<div class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
+									<p class="flex-auto">Explore my professional journey:From challenges overcome to achievements, showcasing my expertise and passion for innovation.</p>
+									<p class="mt-6">
+										<a href="/experience" class="text-sm font-semibold leading-6 text-indigo-400">Learn more <span aria-hidden="true">→</span></a>
+									</p>
+								</div>
+							</div>
+							<div class="flex flex-col">
+								<div class="text-base font-semibold leading-7 text-white">
+									<div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-500">
+										<Icon name="logo/portfolio" class="w-8 h-8"/>
+									</div>
+									Dive into Projects
+								</div>
+								<div class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
+									<p class="flex-auto">Explore the projects that define me: From conceptualization to execution, witness the blend of technical skill and creative vision in my work.</p>
+									<p class="mt-6">
+										<a href="/projects" class="text-sm font-semibold leading-6 text-indigo-400">Learn more <span aria-hidden="true">→</span></a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+				<!-- Feature section -->
+				<div class="mt-32 sm:mt-56">
+					<div class="relative lg:overflow-hidden pt-16">
+						<div class="mx-auto max-w-7xl px-6 lg:px-8">
+							<Image 
+							src={homeStory} 
+							alt="App screenshot"
+							loading="lazy"
+							widths={[320, 540, 720, 1216]}
+							sizes={`(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw`}
+							class="lg:mb-[-12%] rounded-xl shadow-2xl ring-1 ring-white/10 drop-shadow-lg -z-10" width="1216" height="720"/>
+							<div class="max-w-2xl sm:text-center absolute p-2 bottom-0 lg:top-1/3 lg:left-1/3">
+								<h2 class="text-base font-semibold leading-7 text-indigo-400">Getting Personal</h2>
+								<p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">Life Story, Challenging Journey</p>
+								<p class="lg:mt-6 text-lg leading-8">Explore my narrative: From the depths of challenging journeys to the heights of personal triumphs, my life story unfolds.</p>
+							</div>
+						</div>
+					</div>
+					<div class="mx-auto mt-8 mt max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
+						<dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
+							<div class="inline-flex">
+								<Icon name="logo/California-Republic" width={150} height={75} class=" rotate-90" />
+								<span>
+									<dt class="inline font-semibold">
+										Bay Area Resident
+									</dt>
+									<dd class="inline">I enjoy the mild weather and the synergy of innovation and outdoor exploration.</dd>
+								</span>
+								
+							</div>
+							<div class="inline-flex">
+								<Icon name="logo/us-army-logo" width={125} height={75} class=" text-black mr-4"/>
+								<span>
+									<dt class="inline font-semibold">
+										US Army Veteran
+									</dt>
+									<dd class="inline">my service instilled in me a strong set of values and ethics, shaping my approach to challenges.</dd>
+								</span>
+								
+							</div>
+							<div class="inline-flex">
+								<Icon name="logo/oregon-ducks" width={175} height={75} />
+								<span>
+									<dt class="inline font-semibold">
+										Oregon Born
+									</dt>
+									<dd class="inline">my roots have fostered a profound love for nature and a pioneering spirit</dd>
+								</span>
+							</div>
+						</dl>
+					</div>
+				</div>
+		
+				<!-- Stats -->
+				<div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
+					<div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
+						<h2 class="text-base font-semibold leading-8 text-indigo-400">Going Professional</h2>
+						<p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Innovate, Implement, Inspire:Crafting Future Solutions.</p>
+						<p class="mt-6 text-lg leading-8 text-gray-300">Drawing from industry experience, I've led teams to innovate, implement, and inspire, crafting transformative digital solutions.</p>
+					</div>
+					<dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 text-white sm:mt-20 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+						<div class="flex flex-col gap-y-3 border-l border-white/10 pl-6">
+							<dt class="text-sm leading-6">Years of experience</dt>
+							<dd class="order-first text-3xl font-semibold tracking-tight">5+</dd>
+						</div>
+						<div class="flex flex-col gap-y-3 border-l border-white/10 pl-6">
+							<dt class="text-sm leading-6">Projects built.</dt>
+							<dd class="order-first text-3xl font-semibold tracking-tight">100+</dd>
+						</div>
+						<div class="flex flex-col gap-y-3 border-l border-white/10 pl-6">
+							<dt class="text-sm leading-6">Lines of code written</dt>
+							<dd class="order-first text-3xl font-semibold tracking-tight">100k+</dd>
+						</div>
+						<div class="flex flex-col gap-y-3 border-l border-white/10 pl-6">
+							<dt class="text-sm leading-6">Open source contributions</dt>
+							<dd class="order-first text-3xl font-semibold tracking-tight">50+</dd>
+						</div>
+					</dl>
+				</div>
+		
+				<!-- CTA section -->
+				<div class="relative isolate mt-32 px-6 py-32 sm:mt-56 sm:py-40 lg:px-8">
+					<svg class="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
+						<defs>
+							<pattern id="1d4240dd-898f-445f-932d-e2872fd12de3" width="200" height="200" x="50%" y="0" patternUnits="userSpaceOnUse">
+								<path d="M.5 200V.5H200" fill="none" />
+							</pattern>
+						</defs>
+						<svg x="50%" y="0" class="overflow-visible fill-gray-800/20">
+							<path d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z" stroke-width="0" />
+						</svg>
+						<rect width="100%" height="100%" stroke-width="0" fill="url(#1d4240dd-898f-445f-932d-e2872fd12de3)" />
+					</svg>
+					<div class="absolute inset-x-0 top-10 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl" aria-hidden="true">
+						<div class="aspect-[1108/632] w-[69.25rem] flex-none bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-20" style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"></div>
+					</div>
+					<div class="mx-auto max-w-2xl text-center">
+						<h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Start a Conversation,<br />I'm Just a Click Away.</h2>
+						<p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">Explore opportunities for growth: I'm just a click away, waiting to connect, converse, and create impactful solutions.</p>
+						<div class="mt-10 flex items-center justify-center gap-x-6">
+							<a href="/contact" class="rounded-md bg-[#4f46e5] px-3.5 py-2.5 text-sm font-semibold shadow-sm hover:bg-gray-800 hover:text-[#4f46e5] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Start a conversation</a>
+							<a href="/about" class="text-sm font-semibold leading-6 text-white">Learn more <span aria-hidden="true">→</span></a>
+						</div>
+					</div>
+				</div>
+			</main>
+			<Footer />
+		</div>
+	</body>
+</html>

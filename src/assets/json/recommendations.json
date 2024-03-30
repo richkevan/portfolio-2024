@@ -1,0 +1,40 @@
+[
+  {
+    "name": "Liza Rodewald",
+    "title": "Founder & CEO @ Instant Teams",
+    "recommendation": "Rich is a dedicated team member who strives to see an organization succeed. Rich led the efforts in creating the SSO process in our organization across multiple applications. The user experience is critical to the overall success of the application and Rich successfully lead the process from design, development, implementation all the way through to production.",
+    "avatar": "https://media.licdn.com/dms/image/C4E03AQFxeYBr72c1Jg/profile-displayphoto-shrink_100_100/0/1644849212184?e=1712793600&v=beta&t=7T7G1HxasPeenPRTmpsuswP7hjYBQC2ldfYy341gXPg"
+  },
+  {
+    "name": "Erica McMannes",
+    "title": "Founder + Chief People & Community Officer @ Instant Teams",
+    "recommendation": "I'd encourage any employer to meet with and consider Rich for continued opportunities in the field of software engineering. He's been an integral part of our development team and has embraced learning in real time, adjusted quickly to company pivots in product and process, and maintained positive team comms in the day to day with his direct team but also across other departments.\n\nUnfortunately, due to circumstances not related to his personal performance but overall corporate restructuring, Rich will be a viable candidate back out on the market soon!\n\nWe'd be happy to provide further information on Rich and his time with us at Instant Teams as needed. Please feel free to reach out to me at anytime!",
+    "avatar": "https://media.licdn.com/dms/image/D4E03AQHHi0TpwrbRkQ/profile-displayphoto-shrink_100_100/0/1685225338548?e=1712793600&v=beta&t=c6_wxC_M1gRitHeuFWY-j2tzQJcFZE-s9YkmjPcaU1E"
+  },
+  {
+    "name": "Jeff Finlay",
+    "title": "VP of Engineering @ Instant Teams",
+    "recommendation": "Rich is a valuable developer, who is constantly learning and approaches new challenges head on.\nHe took ownership of our SSO project which required research, communication with vendors, and design and planning. This project was essential to allowing our users simplified access to all of our platforms, and Rich was central to its success.",
+    "avatar": "https://media.licdn.com/dms/image/D4E03AQFo9nOUe_CTaw/profile-displayphoto-shrink_100_100/0/1702583577046?e=1712793600&v=beta&t=O3TlZ2ARqm2O3LvrfiQ8kc4pNwQIIfoXvx3pp_sc7a8"
+  },
+  {
+    "name": "Cory Cole",
+    "title": "Senior Software Engineer @ Instant Teams",
+    "recommendation": "Rich has a true passion for technology, and it shows when you work alongside him in building a project from the ground up. Freshly hired, I observed him lean wholly into the codebase, identify areas of improvement and act, and embrace ever-increasing responsibility. I wouldn't hesitate to choose Rich again as a development teammate.",
+    "avatar": "https://media.licdn.com/dms/image/C5603AQEwGZNZxrr8qA/profile-displayphoto-shrink_100_100/0/1517674898632?e=1712793600&v=beta&t=LeO6-52R3FSmCtEyB_JMRiIY3mQzpx779u8TtIzBX34"
+  },
+  {
+    "name": "Jennifer Martin",
+    "title": "Digital Marketer & Lead Generation Expert @ 12 Million Plus",
+    "recommendation": "Rich was a joy to work with! Not only does he have amazing skills which are evident through his work, but he was a great team player. Always quick to respond, provide feedback and pivot with great ease when projects changed. Rich would be a great asset to have on any team!",
+    "avatar": "https://media.licdn.com/dms/image/D5603AQFGR4CMnCvYFA/profile-displayphoto-shrink_100_100/0/1677291939060?e=1712793600&v=beta&t=J54I8itLFTlzSJN6sfjikixzhG3-uOB4hzqUwUHN8PA",
+    "logo": true
+  },
+  {
+    "name": "Kate Williams",
+    "title": "Community Manager @ 12 Million Plus",
+    "recommendation": "Rich was a crucial team player in implementing a new platform within the organization with SSO connection and user implementation. He worked well with the team, always responded quickly, took initiative and action right away and was a joy to work alongside!",
+    "avatar": "https://media.licdn.com/dms/image/D4E03AQE6Obn3ZdEGoQ/profile-displayphoto-shrink_100_100/0/1673543741998?e=1712793600&v=beta&t=ROB1iEbtkubi1lRvwveu7Jzy6QvrqOmWTL0jlhBkT1s",
+    "logo": true
+  }
+]

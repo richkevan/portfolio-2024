@@ -1,0 +1,88 @@
+---
+import {Navigation, Footer} from "../../components/layout";
+import "../../styles/global.css";
+import BlogPost from "../../components/mappables/blog-post.astro";
+import { getBlogPosts } from "../../firebase/firestore/blogs-posts";
+const BlogPosts = await getBlogPosts()
+console.log("GET BLOG POSTS CLIENT: ",BlogPosts);
+const popular = [...BlogPosts].sort((a, b) => b.likes - a.likes).slice(0, 3);
+const latest = BlogPosts.reduce((a, b) => a.date > b.date ? a : b);
+---
+
+<html lang="en" class="h-full">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Blog</title>
+	</head>
+    <!--
+  This example requires updating your template:
+
+  ```
+  <html class="h-full">
+  <body class="h-full">
+  ```
+-->
+  <body class="h-full">
+<div class="bg-slate-800">
+  
+
+  <div>
+    <Navigation />
+    <main>
+      <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+        <div class="py-24 text-center">
+          <h1 class="text-4xl font-bold tracking-tight">Blog</h1>
+        </div>
+
+        <!-- Product grid -->
+        <section aria-labelledby="products-heading" class="mt-8">
+          <h2 id="products-heading" class="sr-only">Products</h2>
+
+          <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+            <!-- Top 3 Posts Section -->
+            {
+              popular.map((post) => {
+                return <BlogPost {...post} />
+              })
+            }
+            <!-- More products... -->
+          </div>
+        </section>
+
+        <section aria-labelledby="featured-blogPost" class="relative mt-16 overflow-hidden rounded-lg lg:h-96">
+          <div class="absolute inset-0">
+            <img src={latest.image} alt="" class="h-full w-full object-cover object-center">
+          </div>
+          <div aria-hidden="true" class="relative h-96 w-full lg:hidden"></div>
+          <div aria-hidden="true" class="relative h-32 w-full lg:hidden"></div>
+          <div class="absolute inset-x-0 bottom-0 rounded-bl-lg rounded-br-lg bg-black bg-opacity-75 p-6 backdrop-blur backdrop-filter sm:flex sm:items-center sm:justify-between lg:inset-x-auto lg:inset-y-0 lg:w-96 lg:flex-col lg:items-start lg:rounded-br-none lg:rounded-tl-lg">
+            <div>
+              <h2 id="featured-heading" class="text-xl font-bold text-white">NEW ARTICLE<br />{latest.title}</h2>
+              <p class="mt-1 text-sm text-gray-300">{latest.description}</p>
+            </div>
+            <a href=`/blog/${latest.id}` class="mt-6 flex flex-shrink-0 items-center justify-center rounded-md border border-white border-opacity-25 bg-white bg-opacity-0 px-4 py-3 text-base font-medium text-white hover:bg-opacity-10 sm:ml-8 sm:mt-0 lg:ml-0 lg:w-full">Read</a>
+          </div>
+        </section>
+
+        <section aria-labelledby="more-products-heading" class="mt-16 pb-24">
+          <h2 id="more-products-heading" class="sr-only">More Posts</h2>
+
+          <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+            {BlogPosts.map((post) => {
+              return <BlogPost {...post} />
+            })}
+            <!-- More products... -->
+          </div>
+        </section>
+      </div>
+    </main>
+  <Footer />
+  </div>
+</div>
+
+    
+  </body>
+</html>

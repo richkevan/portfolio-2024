@@ -1,0 +1,22 @@
+---
+const {name, description, imageUrl, html_url, homepage} = Astro.props
+import { Icon } from "astro-icon/components"
+---
+
+<li class="rounded-2xl bg-gray-800 px-8 py-10">
+  <img class="mx-auto h-48 w-48 rounded-full md:h-56 md:w-56" src=`https://raw.githubusercontent.com/richkevan/${name}/main/${name}.png` alt="">
+  <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight">{name}</h3>
+  <p class="text-sm leading-6 text-gray-400 line-clamp-2 min-h-12">{description}</p>
+  <ul role="list" class="mt-6 flex justify-center gap-x-6">
+    <li>
+      <a href={html_url} target="_blank" class="text-gray-400 hover:text-gray-300">
+        <Icon name="social/github" class="h-5 w-5" />
+      </a>
+    </li>
+    <li>
+      <a href={homepage} target="_blank" class="text-gray-400 hover:text-gray-300">
+        <Icon name="social/url" class="h-5 w-5" />
+      </a>
+    </li>
+  </ul>
+</li>

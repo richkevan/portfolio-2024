@@ -1,0 +1,42 @@
+.slideshow > section {
+  animation: scroll 40s ease-in-out infinite alternate;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  15.66% {
+    transform: translateX(0);
+  }
+  16.66% {
+    transform: translateX(-100%);
+  }
+  32.33% {
+    transform: translateX(-100%);
+  }
+  33.33% {
+    transform: translateX(-200%);
+  }
+  49% {
+    transform: translateX(-200%);
+  }
+  50% {
+    transform: translateX(-300%);
+  }
+  65.67% {
+    transform: translateX(-300%);
+  }
+  66.67% {
+    transform: translateX(-400%);
+  }
+  82.34% {
+    transform: translateX(-400%);
+  }
+  83.34% {
+    transform: translateX(-500%);
+  }
+  100% {
+    transform: translateX(-500%);
+  }
+}
